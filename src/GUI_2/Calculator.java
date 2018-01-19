@@ -73,6 +73,7 @@ public class Calculator extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setText("Number 2");
 
+        add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-plus-16.png"))); // NOI18N
         add.setText("Addition");
         add.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,6 +81,7 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
 
+        substract.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-minus-16.png"))); // NOI18N
         substract.setText("Substraction");
         substract.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,6 +89,7 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
 
+        multiply.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-multiplication-16.png"))); // NOI18N
         multiply.setText("Multiply");
         multiply.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,6 +97,7 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
 
+        division.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-division-16.png"))); // NOI18N
         division.setText("Division");
         division.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +105,7 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
 
+        average.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-average-math-16.png"))); // NOI18N
         average.setText("Average");
         average.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,9 +147,7 @@ public class Calculator extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel2))
+                    .addComponent(jLabel2)
                     .addComponent(t1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -160,7 +163,7 @@ public class Calculator extends javax.swing.JFrame {
                     .addComponent(division))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(average)
-                .addGap(0, 17, Short.MAX_VALUE))
+                .addGap(0, 11, Short.MAX_VALUE))
         );
 
         pack();
@@ -210,7 +213,7 @@ public class Calculator extends javax.swing.JFrame {
        
        if(n1>=0 && n2>=0){
          result=n1*n2;
-        JOptionPane.showMessageDialog(this,"Result :"+ result);
+        JOptionPane.showMessageDialog(this,"Multiplication is :"+ result);
         System.err.println("Result:"+result);  
        }else{
           JOptionPane.showMessageDialog(this,"Sorry Please Input Values"); 
@@ -230,7 +233,7 @@ public class Calculator extends javax.swing.JFrame {
        if(n1>=0 && n2>=0){
          float result=n1/n2;
          
-         JOptionPane.showMessageDialog(this,"Result :"+result);
+         JOptionPane.showMessageDialog(this,"Division is :"+result);
         System.err.println("Result:"+result);  
        }else{
           JOptionPane.showMessageDialog(this,"Sorry Please Input Values"); 
@@ -248,7 +251,7 @@ public class Calculator extends javax.swing.JFrame {
        
        if(n1>=0 && n2>=0){
          float result=(n1+n2)/2;
-        JOptionPane.showMessageDialog(this,"Addition is :"+ result);
+        JOptionPane.showMessageDialog(this,"Average is :"+ result);
         System.err.println("Result:"+result);  
        }else{
           JOptionPane.showMessageDialog(this,"Sorry Please Input Values"); 
